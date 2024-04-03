@@ -51,7 +51,15 @@ function addTask(text, completed) {
         taskItem.appendChild(editinput)
 
     });
+    Editebtn.addEventListener('click', () => {
+        taskText.textContent = text.taskInput;
+        editinput.type = text;
+        Editebtn.textContent = 'save'
+        taskItem.appendChild(editinput)
 
+    });
+    
+   
     // // Create and add "Delete" button
     // const deletebtn = document.createElement('button')
     // deletebtn.textContent = 'delete';
