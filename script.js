@@ -59,31 +59,14 @@ function addTask(text, completed) {
 
     });
     
-   
-    // // Create and add "Delete" button
-    // const deletebtn = document.createElement('button')
-    // deletebtn.textContent = 'delete';
-    // taskItem.appendChild(deletebtn);
-    // taskItem.appendChild(Editebtn);
-    
-    // // console.log(lastname[6]);
-
-    // deletebtn.addEventListener("click", () => {
-    //     // const belete = document.createElement('del');
-    //     // belete.append(taskItem);
-
-    //     taskItem.remove();
-    //     localStorage.removeItem('tasks')
-    //     // localStorage.setItem('tasks', JSON.stringify(tasks));
-       
-        
-    // });
-    
 // Create and add "Delete" button
 const deletebtn = document.createElement('button');
 deletebtn.textContent = 'delete';
 taskItem.appendChild(deletebtn);
 taskItem.appendChild(Editebtn);
+
+
+
 
 // Add event listener to delete button
 deletebtn.addEventListener("click", (e) => {
